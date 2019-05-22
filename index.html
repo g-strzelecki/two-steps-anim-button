@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Two steps animated button</title>
+    <link 
+        rel="stylesheet"
+        href="css/style.css"
+        type="text/css"
+    >
 
-    <style>
-        button {
-            display: block;
-            margin: 100px auto;
-            font-size: 40px;
-            padding: 10px 30px;
-            background-color: #fff;
-            border: 3px solid black;
-        }
-    </style>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.getElementById('body').className += "loaded";
+            }, 0);
+        })
+    </script>
+    
 </head>
 
 <body>
